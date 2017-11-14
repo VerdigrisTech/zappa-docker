@@ -1,6 +1,6 @@
 FROM lambci/lambda:build-python3.6
 
-MAINTAINER "Jacques Kvam" <jacques@verdigris.co>
+LABEL maintainer="jacques@verdigris.co"
 
 # https://stackoverflow.com/questions/8156873/have-relative-path-in-bash-prompt
 ENV PS1 'zappa@$(pwd | sed "s@^/var/task/\?@@")\$ '
